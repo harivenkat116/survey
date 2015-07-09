@@ -25,7 +25,7 @@ public class SurveyeeInfoSurveysService {
 */
 	
 	public List<SurveyeeInfo> getAllSurveyeeInfos() {
-		return dao.getAllSurveyeeInfos();
+			return dao.getAllSurveyeeInfos();
 	}
 	
 	/*public void add(Customer customer) {
