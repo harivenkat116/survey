@@ -11,6 +11,7 @@ public class BaseDAO {
 	protected Connection getConnection() throws SQLException {
 
 		try {
+			//TODO
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
