@@ -12,6 +12,7 @@ public class BaseDAO {
 
 		try {
 			//TODO//TODO one more from Shovan
+			//tooo change
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
