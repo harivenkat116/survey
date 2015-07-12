@@ -9,25 +9,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.survey2015.dao.DAOException;
-import com.survey2015.dao.SurveyeeInfo;
+import com.survey2015.dao.FullSurveyRecord;
 import com.survey2015.service.SurveyeeInfoSurveysListService;
 
 @Controller
-public class ListSurveyeeInfoController {
+public class ListFullSurveyController {
 	
 	@Autowired
 	private SurveyeeInfoSurveysListService service;
 
-	@RequestMapping(value = "/listsurveyeeinfo", method=RequestMethod.GET)
-	// @RequestMapping(value = "/listsurveyeeinfo", method=RequestMethod.POST)
-	public ModelAndView allSurveyeeInfo() throws DAOException {
-		List<SurveyeeInfo> surveyeeInfos = service.getAllSurveyeeInfos();
+	@RequestMapping(value = "/listfullsurvey", method=RequestMethod.GET)
+	public ModelAndView allFullSurvey() throws DAOException {
+		List<FullSurveyRecord> fullSurveyRecords = service.getAllFullSurvey();
 
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("list_surveyeeinfo");
-		modelAndView.addObject("surveyeeInfos", surveyeeInfos);
+		modelAndView.setViewName("list_fullsurvey");
+		modelAndView.addObject("fullSurveyRecords", fullSurveyRecords);
 		
-		System.out.println("http://localhost:9090/Survey2015/listsurveyeeinfo");
+		System.out.println("http://localhost:9090/Survey2015/listfullsurvey");
 		
 		return modelAndView;
 	}

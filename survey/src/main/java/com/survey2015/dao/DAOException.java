@@ -2,7 +2,7 @@ package com.survey2015.dao;
 
 import java.sql.SQLException;
 
-public class DAOException extends Exception {
+public class DAOException extends RuntimeException {
 	
 	public DAOException(String errorMessage, Throwable ex)
 	{

@@ -21,7 +21,7 @@ public class ListSurveyeeInfoViaDaoController {
 	private SurveyeeInfoSurveysDAO dao;
 
 	@RequestMapping(value = "/listsurveyeeinfoviadao", method=RequestMethod.GET)
-	public ModelAndView surveyeeInfo() throws DAOException {
+	public ModelAndView allSurveyeeInfo() throws DAOException {
 		List<SurveyeeInfo> surveyeeInfos = dao.getAllSurveyeeInfos();
 
 		ModelAndView modelAndView = new ModelAndView();
