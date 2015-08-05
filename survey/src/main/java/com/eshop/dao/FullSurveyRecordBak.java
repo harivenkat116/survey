@@ -1,7 +1,12 @@
-package com.survey2015.dao;
+package com.eshop.dao;
 
+public class FullSurveyRecordBak {
 
-public class FullSurveyRecord extends SurveyeeInfo {
+	private int surveyeeId;
+	private String surveyeeName;
+	private int companyId;
+	private String deskNumber;
+	private String phoneNumber;
 
 	private int surveyDetailsId;
 	private String techCategory;
@@ -10,13 +15,16 @@ public class FullSurveyRecord extends SurveyeeInfo {
 	private String willToHelpRating;
 	private String courtesyRating;
 
-	public FullSurveyRecord(int surveyeeId, String surveyeeName, int companyId,
+	public FullSurveyRecordBak(int surveyeeId, String surveyeeName, int companyId,
 			String deskNumber, String phoneNumber, int surveyDetailsId,
 			String techCategory, String solvedOrNot, String solutionDegree,
 			String willToHelpRating, String courtesyRating) {
-
-		super(surveyeeId, surveyeeName, companyId, deskNumber, phoneNumber);
-		
+		super();
+		this.surveyeeId = surveyeeId;
+		this.surveyeeName = surveyeeName;
+		this.companyId = companyId;
+		this.deskNumber = deskNumber;
+		this.phoneNumber = phoneNumber;
 		this.surveyDetailsId = surveyDetailsId;
 		this.techCategory = techCategory;
 		this.solvedOrNot = solvedOrNot;
@@ -25,11 +33,25 @@ public class FullSurveyRecord extends SurveyeeInfo {
 		this.courtesyRating = courtesyRating;
 	}
 
-	public FullSurveyRecord() {
-		super();
-		// TODO Auto-generated constructor stub
+	public int getSurveyeeId() {
+		return surveyeeId;
 	}
 
+	public String getSurveyeeName() {
+		return surveyeeName;
+	}
+
+	public int getCompanyId() {
+		return companyId;
+	}
+
+	public String getDeskNumber() {
+		return deskNumber;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
 
 	public int getSurveyDetailsId() {
 		return surveyDetailsId;
@@ -56,6 +78,26 @@ public class FullSurveyRecord extends SurveyeeInfo {
 	}
 
 	
+	
+	public void setSurveyeeId(int surveyeeId) {
+		this.surveyeeId = surveyeeId;
+	}
+
+	public void setSurveyeeName(String surveyeeName) {
+		this.surveyeeName = surveyeeName;
+	}
+
+	public void setCompanyId(int companyId) {
+		this.companyId = companyId;
+	}
+
+	public void setDeskNumber(String deskNumber) {
+		this.deskNumber = deskNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
 	
 	public void setSurveyDetailsId(int surveyDetailsId) {
 		this.surveyDetailsId = surveyDetailsId;

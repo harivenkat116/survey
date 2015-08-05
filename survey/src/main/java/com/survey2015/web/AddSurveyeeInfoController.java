@@ -31,11 +31,12 @@ public class AddSurveyeeInfoController {
 	 */
 
 	@RequestMapping(value = "/addsurveyeeinfo", method = RequestMethod.GET)
-	public String addSurveyeeInfo(@RequestParam("surveyeeId") int surveyeeId,
-			@RequestParam("surveyeeName") String surveyeeName, @RequestParam("companyId") int companyId,
-			@RequestParam("deskNumber") String deskNumber, @RequestParam("phoneNumber") String phoneNumber)
+	public String addSurveyeeInfo(@RequestParam("surveyeeName") String surveyeeName,
+			@RequestParam("companyId") int companyId, @RequestParam("deskNumber") String deskNumber,
+			@RequestParam("phoneNumber") String phoneNumber)
 			throws DAOException {
 		
+		int surveyeeId = 0;
 		SurveyeeInfo surveyeeInfo = new SurveyeeInfo(surveyeeId, surveyeeName, companyId, deskNumber, phoneNumber);
 
 		try {

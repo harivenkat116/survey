@@ -27,6 +27,11 @@ public class Surveys {
 		this.courtesyRating = courtesyRating;
 	}
 
+	public Surveys() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getSurveyDetailsId() {
 		return surveyDetailsId;
 	}

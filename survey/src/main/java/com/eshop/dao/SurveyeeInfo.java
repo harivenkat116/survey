@@ -1,4 +1,4 @@
-package com.survey2015.dao;
+package com.eshop.dao;
 
 //TODO rename to Surveyee
 public class SurveyeeInfo {

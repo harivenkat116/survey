@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Survey2015</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<description></description>
+		<display-name>ListSurveyeeInfoServlet</display-name>
+		<servlet-name>ListSurveyeeInfoServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.ListSurveyeeInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListSurveyeeInfoServlet</servlet-name>
+		<url-pattern>/Listsurveyeeinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>FindSurveyeeInfoByPrimaryKeyServlet</display-name>
+		<servlet-name>FindSurveyeeInfoByPrimaryKeyServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.FindSurveyeeInfoByPrimaryKeyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindSurveyeeInfoByPrimaryKeyServlet</servlet-name>
+		<url-pattern>/Findsurveyeeinfobyprimarykey</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>FindSurveyeeInfoByNameServlet</display-name>
+		<servlet-name>FindSurveyeeInfoByNameServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.FindSurveyeeInfoByNameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindSurveyeeInfoByNameServlet</servlet-name>
+		<url-pattern>/Findsurveyeeinfobyname</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>ListSurveysServlet</display-name>
+		<servlet-name>ListSurveysServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.ListSurveysServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListSurveysServlet</servlet-name>
+		<url-pattern>/Listsurveys</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>FindSurveysByIdServlet</display-name>
+		<servlet-name>FindSurveysByIdServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.FindSurveysByIdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindSurveysByIdServlet</servlet-name>
+		<url-pattern>/Findsurveysbyid</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>ListFullSurveyServlet</display-name>
+		<servlet-name>ListFullSurveyServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.ListFullSurveyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListFullSurveyServlet</servlet-name>
+		<url-pattern>/Listfullsurvey</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>AddSurveyeeInfoServlet</display-name>
+		<servlet-name>AddSurveyeeInfoServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.AddSurveyeeInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddSurveyeeInfoServlet</servlet-name>
+		<url-pattern>/Addsurvyeeinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>AddSurveysServlet</display-name>
+		<servlet-name>AddSurveysServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.AddSurveysServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddSurveysServlet</servlet-name>
+		<url-pattern>/Addsurveys</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>AddFullSurveyServlet</display-name>
+		<servlet-name>AddFullSurveyServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.AddFullSurveyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddFullSurveyServlet</servlet-name>
+		<url-pattern>/Addfullsurvey</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>UpdateSurveyeeInfoServlet</display-name>
+		<servlet-name>UpdateSurveyeeInfoServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.UpdateSurveyeeInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateSurveyeeInfoServlet</servlet-name>
+		<url-pattern>/Updatesurveyeeinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>UpdateSurveys</display-name>
+		<servlet-name>UpdateSurveys</servlet-name>
+		<servlet-class>com.survey2015.servlet.UpdateSurveys</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateSurveys</servlet-name>
+		<url-pattern>/Updatesurveys</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>UpdateFullSurveyServlet</display-name>
+		<servlet-name>UpdateFullSurveyServlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.UpdateFullSurveyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateFullSurveyServlet</servlet-name>
+		<url-pattern>/Updatefullsurvey</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>DeleteSurveyeeInfo</display-name>
+		<servlet-name>DeleteSurveyeeInfo</servlet-name>
+		<servlet-class>com.survey2015.servlet.DeleteSurveyeeInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteSurveyeeInfo</servlet-name>
+		<url-pattern>/Deletefullsurveyee</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<description></description>
+		<display-name>ListSurveyeeInfo2Servlet</display-name>
+		<servlet-name>ListSurveyeeInfo2Servlet</servlet-name>
+		<servlet-class>com.survey2015.servlet.ListSurveyeeInfo2Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListSurveyeeInfo2Servlet</servlet-name>
+		<url-pattern>/Listsurveyeeinfo2</url-pattern>
+	</servlet-mapping>
+
+
+
+
+</web-app>

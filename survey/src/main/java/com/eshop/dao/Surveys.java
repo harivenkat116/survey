@@ -1,23 +1,25 @@
-package com.survey2015.dao;
+package com.eshop.dao;
 
-
-public class FullSurveyRecord extends SurveyeeInfo {
-
+//TODO Change this to Survey
+public class Surveys {
+	
+	//TODO Survey has Surveyee
 	private int surveyDetailsId;
+	
+	//private Surveyee surveyee;
+	
+	private int surveyeeId;
 	private String techCategory;
 	private String solvedOrNot;
 	private String solutionDegree;
 	private String willToHelpRating;
 	private String courtesyRating;
-
-	public FullSurveyRecord(int surveyeeId, String surveyeeName, int companyId,
-			String deskNumber, String phoneNumber, int surveyDetailsId,
-			String techCategory, String solvedOrNot, String solutionDegree,
+	
+	public Surveys(int surveyDetailsId, int surveyeeId, String techCategory, String solvedOrNot, String solutionDegree,
 			String willToHelpRating, String courtesyRating) {
-
-		super(surveyeeId, surveyeeName, companyId, deskNumber, phoneNumber);
-		
+		super();
 		this.surveyDetailsId = surveyDetailsId;
+		this.surveyeeId = surveyeeId;
 		this.techCategory = techCategory;
 		this.solvedOrNot = solvedOrNot;
 		this.solutionDegree = solutionDegree;
@@ -25,14 +27,17 @@ public class FullSurveyRecord extends SurveyeeInfo {
 		this.courtesyRating = courtesyRating;
 	}
 
-	public FullSurveyRecord() {
+	public Surveys() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-
 	public int getSurveyDetailsId() {
 		return surveyDetailsId;
+	}
+
+	public int getSurveyeeId() {
+		return surveyeeId;
 	}
 
 	public String getTechCategory() {
@@ -57,8 +62,13 @@ public class FullSurveyRecord extends SurveyeeInfo {
 
 	
 	
+		
 	public void setSurveyDetailsId(int surveyDetailsId) {
 		this.surveyDetailsId = surveyDetailsId;
+	}
+
+	public void setSurveyeeId(int surveyeeId) {
+		this.surveyeeId = surveyeeId;
 	}
 
 	public void setTechCategory(String techCategory) {
@@ -80,5 +90,4 @@ public class FullSurveyRecord extends SurveyeeInfo {
 	public void setCourtesyRating(String courtesyRating) {
 		this.courtesyRating = courtesyRating;
 	}
-
 }

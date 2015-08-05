@@ -35,12 +35,12 @@ public class AddSurveysController {
 	 */
 	
 	@RequestMapping(value = "/addsurveys", method = RequestMethod.GET)
-	public String addSurveys(@RequestParam("surveyDetailsId") int surveyDetailsId,
-			@RequestParam("surveyeeId") int surveyeeId, @RequestParam("techCategory") String techCategory,
+	public String addSurveys(@RequestParam("surveyeeId") int surveyeeId, @RequestParam("techCategory") String techCategory,
 			@RequestParam("solvedOrNot") String solvedOrNot, @RequestParam("solutionDegree") String solutionDegree,
 			@RequestParam("willToHelpRating") String willToHelpRating, @RequestParam("courtesyRating") String courtesyRating)
 			throws DAOException {
-				
+
+		int surveyDetailsId = 0;
 		Surveys surveys = new Surveys(surveyDetailsId, surveyeeId, techCategory, solvedOrNot, solutionDegree, willToHelpRating, courtesyRating);
 
 		try {

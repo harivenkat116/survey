@@ -50,18 +50,20 @@ public class AddFullSurveyController {
 */		
 
 		@RequestMapping(value = "/addfullsurvey", method = RequestMethod.GET)		
-		public String addSurveyeeInfo(@RequestParam("surveyeeId") int surveyeeId,
-				@RequestParam("surveyeeName") String surveyeeName, @RequestParam("companyId") int companyId,
-				@RequestParam("deskNumber") String deskNumber, @RequestParam("phoneNumber") String phoneNumber,
-				@RequestParam("surveyDetailsId") int surveyDetailsId, @RequestParam("techCategory") String techCategory,
-				@RequestParam("solvedOrNot") String solvedOrNot, @RequestParam("solutionDegree") String solutionDegree,
+		public String addSurveyeeInfo(@RequestParam("surveyeeName") String surveyeeName,
+				@RequestParam("companyId") int companyId, @RequestParam("deskNumber") String deskNumber,
+				@RequestParam("phoneNumber") String phoneNumber,
+				@RequestParam("techCategory") String techCategory, @RequestParam("solvedOrNot") String solvedOrNot,
+				@RequestParam("solutionDegree") String solutionDegree,
 				@RequestParam("willToHelpRating") String willToHelpRating, @RequestParam("courtesyRating") String courtesyRating)
 				throws DAOException {
 
 		List<Integer> Array1 = new ArrayList<Integer>();
 		
+		int surveyeeId = 0;
 		SurveyeeInfo surveyeeInfo = new SurveyeeInfo(surveyeeId, surveyeeName, companyId, deskNumber, phoneNumber);
 
+		int surveyDetailsId = 0;
 		Surveys surveys = new Surveys(surveyDetailsId, surveyeeId, techCategory, solvedOrNot, solutionDegree, willToHelpRating, courtesyRating);
 
 		try {
